@@ -1,14 +1,16 @@
 import React from "react";
 import './App.css';
-import Header from "./Header";
-import Main from "./Main";
-import Footer from "./Footer"
+import {Header,Footer} from "./components";
+import {Home} from "./pages";
+
+
 
 function App() {
+
   return (
     <React.Fragment className="App">
         <Header/>
-        <Main/>
+          <Home/>
         <Footer/>
     </React.Fragment>
   );

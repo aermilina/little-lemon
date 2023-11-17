@@ -1,0 +1,55 @@
+.hero {
+    position: relative;
+    margin: 0 -287px 0 -294px;
+    padding: 47px 287px 28px 294px;
+  }
+
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom:50px;
+    right:0;
+    background: #495E57;
+  }
+
+h1{
+    font-size: 56px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+  }
+
+  h2{
+    font-family: "Markazi Text",sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+  }
+  
+  p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+  }
+  .desc{
+    color: #fff;
+    margin-bottom: 72px;
+  }
+
+  .content{
+    display: flex;
+    position:relative;
+  }
+  
+  .rightHero{
+    position:relative;
+    top:0;
+  
+  }
+  .rightHero img{
+    object-fit: cover;
+    width:375px;
+    height: 398px;
+    border-radius:16px;
+  
+  }
