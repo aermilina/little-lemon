@@ -1,13 +1,19 @@
 import React from "react";
 import Logo from "../../assets/Logo.svg";
-import {Nav} from "../Nav";
+import {BurgerMenu} from "./components";
 import './Header.css';
+import {Nav} from "../Nav";
+import { useResponsive } from "../../ui/media";
 
 export const Header=()=> {
+
+  const {isMobile} = useResponsive();
+  console.log({isMobile})
   return (
       <header>
         <img src={Logo} alt="Little Lemon"/>
-        <Nav/>
+          {isMobile && <BurgerMenu/>}
+          {!isMobile && <Nav/>}
       </header>
   );
 }

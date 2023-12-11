@@ -1,0 +1,99 @@
+.contentSpecials{
+    display: flex;
+    flex-flow: column;
+    padding: 50px 0  50px 0;
+}
+.specialsHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+
+}
+
+.meals{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meal{
+    display: block;
+    width: calc(30% - 35px);
+    height: 439px;
+    background: #EDEFEE;
+    padding: 0 20px;
+}
+
+.mealImage{
+    border-radius: 16px;
+    object-fit: cover;
+    margin: 0 -20px;
+    width: 264px;
+    height: 185px;
+}
+.mealHeading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.mealTitle{
+    font-size: 24px;
+    font-weight: 500;
+    font-family:"Markazi Text";
+}
+
+.mealPrice{ 
+    font-size: 16px;
+    font-weight: 700;
+    color: #EE9972;
+    font-family: "Karla";
+}
+
+.mealDescription{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Karla";
+    color: #495E57;
+    height: 120px;
+}
+
+.orderMeal{
+    font-family:"Karla";
+    font-size: 16px;
+    text-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+    color: #495E57;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+}
+
+.orderMeal::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image:url(../../../../assets/Basket.svg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    right: -30px;
+}
+
+@media (max-width: 768px){
+    .mealImage{
+        width: 320px;
+        height: 150px;
+    }
+    .meal{
+        width: 100%;
+        flex-shrink: 0;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+}

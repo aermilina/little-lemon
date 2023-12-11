@@ -1,0 +1,70 @@
+.testimonials{
+    background: #D9D9D9;
+    margin: 0 -287px 0 -294px;
+    padding: 47px 287px 28px 294px;
+}
+
+.contentTestimonials{
+    display: flex;
+    flex-flow: column;
+    padding: 0 0  50px 0;
+    align-items: center;
+}
+
+.reviews{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.review{
+    width:180px;
+    height: 175px;
+    background: #fff;
+    padding:5px 10px;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+}
+
+.reviewAuthor {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.authorName{
+    font-family: "Karla";
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.reviewPhoto{
+    border-radius:50%;
+}
+
+.reviewRating{
+    color: rgb(244, 206, 20);
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.reviewText{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+@media (max-width: 768px){
+    .testimonials{
+        padding: 10px 1rem;
+        margin: 0 -1rem;
+    }
+    .review{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

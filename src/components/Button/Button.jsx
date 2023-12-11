@@ -2,9 +2,10 @@ import React from "react";
 import './Button.css';
 
 
-export const Button = ({action, name,background, color})=>{
+export const Button = ({onClick, name,background,width, color,children})=>{
+  console.log({ onClick })
   return (
-      <button onClick={action} style={{ color: color, backgroundColor: background }}>{name}</button>
+      <button onClick={onClick} style={{ color: color, backgroundColor: background, width: width?`${width}px`:"auto" }}>{children || name}</button>
   );
 }
 

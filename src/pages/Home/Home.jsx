@@ -1,8 +1,15 @@
 import React from "react";
-import {Hero} from "./components";
+import {Hero,Specials,Testimonials,About} from "./components";
+
+
 
 export const Home = () =>{
     return(
-        <Hero/>
+        <>
+            <Hero/>
+            <Specials/>
+            <Testimonials/>
+            <About/>
+        </>
     )
 }

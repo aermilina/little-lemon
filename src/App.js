@@ -1,18 +1,24 @@
 import React from "react";
+import {Routes,Route,BrowserRouter} from "react-router-dom";
 import './App.css';
-import {Header,Footer} from "./components";
+import {Layout} from "./components";
 import {Home} from "./pages";
+import { ResponsiveStateProvider } from "./ui/media";
 
 
 
 function App() {
 
   return (
-    <React.Fragment className="App">
-        <Header/>
-          <Home/>
-        <Footer/>
-    </React.Fragment>
+      <BrowserRouter>
+        <ResponsiveStateProvider>
+          <Layout>
+            <Routes>
+              <Route path="/" element={<Home/>}/>
+            </Routes>
+          </Layout>
+        </ResponsiveStateProvider>
+        </BrowserRouter>
   );
 }
 

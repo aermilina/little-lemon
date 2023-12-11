@@ -53,3 +53,31 @@ h1{
     border-radius:16px;
   
   }
+
+
+  @media (max-width: 786px){
+    .hero{
+      padding: 10px 1rem;
+      margin: 0 -1rem;
+    }
+    .rightHero img{
+      object-fit: cover;
+      width:120px;
+      height: auto;
+      border-radius:16px;
+    
+    }
+    h1{
+      font-size:40px;
+    }
+    h2{
+      font-size: 30px;
+    }
+    .desc{
+      font-size:16px;
+      margin-bottom: 50px;
+    }
+    .hero::before{
+      bottom:0;
+    }
+  }

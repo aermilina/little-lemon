@@ -4,18 +4,6 @@
   font-size: 1rem;
 }
 
-#root{
-  display: grid;
-  grid-template-areas: "header header header" "main main main" "footer footer footer";
-  grid-template-columns: 100%;
-  grid-template-rows: auto auto auto;
-}
-
-
-main{
-  grid-area: main;
-  padding: 0 287px 0 291px;
-}
 
 
 
