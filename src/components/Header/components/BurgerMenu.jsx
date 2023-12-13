@@ -12,7 +12,7 @@ export const BurgerMenu = () =>{
     function toogleMenu(){
         setMenuState(prev => !prev)
     };
-    console.log({menuState})
+
 
     return(
         <>

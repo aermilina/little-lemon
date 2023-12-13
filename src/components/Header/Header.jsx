@@ -8,7 +8,7 @@ import { useResponsive } from "../../ui/media";
 export const Header=()=> {
 
   const {isMobile} = useResponsive();
-  console.log({isMobile})
+
   return (
       <header>
         <img src={Logo} alt="Little Lemon"/>

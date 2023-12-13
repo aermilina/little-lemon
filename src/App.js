@@ -2,7 +2,7 @@ import React from "react";
 import {Routes,Route,BrowserRouter} from "react-router-dom";
 import './App.css';
 import {Layout} from "./components";
-import {Home} from "./pages";
+import {Home, ReserveTable, ConfirmationPage} from "./pages";
 import { ResponsiveStateProvider } from "./ui/media";
 
 
@@ -15,6 +15,8 @@ function App() {
           <Layout>
             <Routes>
               <Route path="/" element={<Home/>}/>
+              <Route path="/bookings" element={<ReserveTable/>}/>
+              <Route path="/confirm" element={<ConfirmationPage/>}/>
             </Routes>
           </Layout>
         </ResponsiveStateProvider>
