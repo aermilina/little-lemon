@@ -37,6 +37,19 @@ describe('Booking form',() => {
         
 
   });
+  test('Errors', () => {
+    render(
+        <Bookings availableTimes={availableTimes} dispatch={dispatch}/>
+    );
+
+
+    const numberofGuest = screen.getByLabelText("Number of guests")
+    fireEvent.change(numberOfGuests, { target: { value: 0 } });
+    const errorMessage = screen.getByTestId('error');
+    
+    expect(errorMessage).toBeInTheDocument();
+
+});
 });
 
     
